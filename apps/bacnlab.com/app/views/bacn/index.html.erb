@@ -1,0 +1,24 @@
+<% content_for :script do %>
+  $(function(){
+    for(var i=0; i<4; i++){
+      $(".ItemList").append($(".Item").clone());
+    }
+  });
+<% end %>
+<ul class="BucketList">
+  <li>All</li>
+  <li class="Selected">Facebook</li>
+  <li>Twitter</li>
+  <li>Unrecognized</li>
+</ul>
+<div class="DisplayPort">
+  <ul class="Container ItemList">
+    <li class="Facebook Item">
+      <h1>Jeremy Wex Sent you a Facebook Message</h1>
+      <div class="Content">
+        <h2>Subject: Email</h2>
+        <p>Thanks! It seems to be okay now.</p>
+      </div>
+    </li>
+  </ul>
+</div>
