@@ -1,0 +1,63 @@
+body{
+  background-color: #eee;
+  font-family: arial;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+#header {
+  height: 100px;
+  background-color: #400e0d;
+  color: #fff;
+}
+
+#header h1 {
+  font-size: 3em;
+}
+#header h1 a{
+  color: #fff;
+}
+
+
+#content {
+  background-color: #fff;
+}
+
+.Bacn #content {
+  background-color: #fff;
+}
+.Bacn #content ul.BucketList li {
+  background: #ccc; /* for non-css3 browsers */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eee', endColorstr='#ccc'); /* for IE */
+  background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ccc)); /* for webkit browsers */
+  background: -moz-linear-gradient(top,  #eee,  #ccc); /* for firefox 3.6+ */ 
+}
+.Bacn #content ul.BucketList li.Selected {
+  background: none;
+  background-color: #fff;
+}
+.Bacn #content div.DisplayPort {
+  background-color: #fff;
+}
+
+#dashboard {
+  background-color: #fff;
+}
+
+#footer {
+  border-top: 2px solid #ccc;
+}
+
+/* Generic Classes */
+
+.Item {
+  border: 3px solid #ccc;
+}
+
+.Item h1 {
+  display: block;
+  background-color: blue;
+  color: white;
+}

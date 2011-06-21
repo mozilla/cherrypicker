@@ -1,0 +1,80 @@
+body div{
+  width: auto;
+  height: auto;
+}
+body.Bacn{
+  overflow: hidden;
+}
+
+#header {
+  height: 200px;
+}
+
+#header h1 {
+  padding: 0.5em;  
+}
+
+#content {
+  padding: 2em;
+  height: 100%;
+}
+.Bacn #content {
+  padding: 0;
+  height: 400px;
+}
+
+.Bacn ul.BucketList {
+  width: 20%;
+  float: left;
+}
+
+.Bacn ul.BucketList li {
+  margin: 0;
+  padding: 1em;
+  height: 1em;
+}
+
+.Bacn div.DisplayPort {
+  float: right;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 100%;
+  width: 80%;
+}
+
+#footer {
+  width: 100%;
+  clear: both;
+}
+
+#footer div{
+  width: 400px;
+  padding: 2em;
+}
+
+#footer #footer_links {
+  float: left;
+}
+
+#footer #mission{
+  float: right;
+}
+
+
+/* Generic Classes */
+
+.Container {
+  padding: 1em;
+}
+
+ul.ItemList {
+  list-style: none;
+}
+
+.Item {
+  width: 100%;
+  margin-bottom: 1em;
+}
+.Item h1 {
+  width: 100%;
+}
