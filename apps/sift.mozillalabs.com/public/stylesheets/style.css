@@ -1,16 +1,25 @@
+/*
+2c2d2b - almost black
+e2e9f9 - light blue
+eaeaea - light grey
+8aae0b - green
+5480cc - darkish blue
+*/
+
 body{
-  background-color: #eee;
-  font-family: arial;
+  font: 0.8em Verdana, sans-serif;
+  line-height: 1; 
+  color: #2c2d2b; 
 }
 
-a, a:visited {
-  text-decoration: none;
-}
-
+a { text-decoration: none; }
+a img {border: none;}
+a:link, a:visited {color: #555}
+a:hover {color: #000;}
+  
 #header {
-  height: 100px;
-  background-color: #400e0d;
-  color: #fff;
+  background: #2c2d2b;
+  color: #fffbff;
 }
 
 #header h1 {
@@ -26,7 +35,7 @@ a, a:visited {
 }
 
 .Bacn #content {
-  background-color: #fff;
+  background-color: #e2e9f9;
 }
 .Bacn #content ul.BucketList li {
   background: #ccc; /* for non-css3 browsers */
@@ -47,17 +56,15 @@ a, a:visited {
 }
 
 #footer {
-  border-top: 2px solid #ccc;
+  border-top: 2px solid #aaa;
 }
 
 /* Generic Classes */
 
 .Item {
-  border: 3px solid #ccc;
+  border-bottom: 2px solid #ccc;
 }
 
 .Item h1 {
   display: block;
-  background-color: blue;
-  color: white;
 }
