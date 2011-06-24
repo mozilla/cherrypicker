@@ -1,13 +1,11 @@
 body div{
   width: auto;
-  height: auto;
 }
 body.Bacn{
-  overflow: hidden;
 }
 
 #header {
-  height: 200px;
+  height: 70px;
 }
 
 #header h1 {
@@ -20,7 +18,7 @@ body.Bacn{
 }
 .Bacn #content {
   padding: 0;
-  height: 400px;
+  height: 500px;
 }
 
 .Bacn ul.BucketList {
