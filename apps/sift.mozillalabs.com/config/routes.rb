@@ -1,11 +1,10 @@
 BacnlabCom::Application.routes.draw do
 
-  get "bacn/index"
-
   get "site/index"
   get "site/about"
   
   resources :session
+  resources :bacn
   	
   root :to => "site#index"
 
