@@ -6,11 +6,18 @@ class ApplicationController < ActionController::Base
   end
   
   def authenticate
-    if !session[:user_id]
-      flash[:notice] = "Please sign in or create an account to continue."
-      session[:login_redirect] = request.url
-      redirect_to :controller => :session, :action => :new
-      return false
+    
+    if request.authorization.blank?
+      if !session[:user_id]
+        flash[:notice] = "Please sign in or create an account to continue."
+        session[:login_redirect] = request.url
+        redirect_to :controller => :session, :action => :new
+        return false
+      end
+    else
+      authenticate_with_http_basic do |username, password|
+        username == "foo" && password == "bar"
+      end
     end
   end
 end
