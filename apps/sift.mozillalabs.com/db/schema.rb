@@ -10,7 +10,30 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110624195000) do
+ActiveRecord::Schema.define(:version => 20110627195755) do
+
+  create_table "bacns", :force => true do |t|
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "bacns", ["user_id"], :name => "index_bacns_on_user_id"
+
+  create_table "headers", :force => true do |t|
+    t.integer "bacn_id"
+    t.string  "key"
+    t.string  "value"
+  end
+
+  add_index "headers", ["bacn_id"], :name => "index_headers_on_bacn_id"
+
+  create_table "mime_parts", :force => true do |t|
+    t.string "content_type"
+    t.text   "data",         :limit => 2147483647
+  end
+
+  add_index "mime_parts", ["content_type"], :name => "index_mime_parts_on_content_type"
 
   create_table "users", :force => true do |t|
     t.string   "email"
