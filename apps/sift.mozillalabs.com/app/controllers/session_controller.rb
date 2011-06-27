@@ -9,12 +9,12 @@ class SessionController < ApplicationController
 
   def create
     if params[:session]
-      result = Mozilla::BrowserId.new.verify(params[:session][:assertion], browser_id_audience)
+      @result = Mozilla::BrowserId.new.verify(params[:session][:assertion], browser_id_audience)
       require 'pp'
-      pp result
-      if result[:success]
+
+      if @result[:success]
         #TODO: deaul with "valid-until"
-        user = User.find_or_create_by_email(result[:email])
+        user = User.find_or_create_by_email(@result[:email])
         session[:user_id] = user.id
         session[:email] = user.email
         if session[:login_redirect] && !(session[:login_redirect] =~ /\/session/)
@@ -23,6 +23,7 @@ class SessionController < ApplicationController
           redirect_to '/bacn'
         end
       else
+        render :action => 'error', :status => 403
         #TODO: deal with failure... ughgh, life's hard.
         puts "Life is hard."
       end
