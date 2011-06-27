@@ -5,7 +5,6 @@
 
 body{
   font: 0.8em Verdana, sans-serif;
-  line-height: 1; 
   color: #2c2d2b; 
 }
 
@@ -49,6 +48,9 @@ body.Bacn #header ul.Menu li.Bacn, body.Bacn #header ul.Menu li.Bacn a {backgrou
   background-color: #222;
 }
 
+#footer a, a:visited, a:hover {
+  color: #ccc;
+}
 
 .Bacn #content ul.BucketList li.Selected {
   background: none;
