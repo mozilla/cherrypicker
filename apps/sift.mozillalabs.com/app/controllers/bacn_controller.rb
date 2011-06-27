@@ -2,7 +2,6 @@ class BacnController < ApplicationController
   
   before_filter :authenticate
   
-  def index
-    
-  end
+  respond_to  :html, :json
+  
 end
