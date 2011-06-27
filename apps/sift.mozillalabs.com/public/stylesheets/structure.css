@@ -1,24 +1,71 @@
-body div{
-  width: auto;
+html, body {
+  height: 100%;
+  width: 100%;
 }
-body.Bacn{
+
+#main_wrapper {
+  min-height: 70%;
+  overflow-x: visible;
+}
+
+#header_wrapper {
+  height: 80px;
 }
 
 #header {
-  height: 70px;
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
 }
 
 #header h1 {
-  padding: 0.5em;  
+  padding: 0.5em;
+  position: absolute;
+}
+
+#header ul.Menu{
+  position: absolute;
+  right: 0px;
+  top: 55px;
+  float: right;
+  clear: right;
+}
+
+#header ul.Menu li {
+  display: inline;
+  margin: 1em;
+  padding: 0.8em;
 }
 
 #content {
   padding: 2em;
-  height: 100%;
+  width: 960px;
+  margin: 0 auto;
 }
+
+
+#footer_wrapper {
+  height: 240px;
+  width: 100%;
+  clear: both;
+}
+#footer {
+  margin: 1em auto;
+  width: 960px;
+}
+
+#footer #footer_links {
+  position: absolute;
+  width: 400px
+}
+
+#footer #mission{
+  width: 400px;
+  float: right;
+}
+
 .Bacn #content {
   padding: 0;
-  height: 500px;
 }
 
 .Bacn ul.BucketList {
@@ -40,23 +87,7 @@ body.Bacn{
   width: 80%;
 }
 
-#footer {
-  width: 100%;
-  clear: both;
-}
 
-#footer div{
-  width: 400px;
-  padding: 2em;
-}
-
-#footer #footer_links {
-  float: left;
-}
-
-#footer #mission{
-  float: right;
-}
 
 
 /* Generic Classes */
@@ -75,4 +106,8 @@ ul.ItemList {
 }
 .Item h1 {
   width: 100%;
+}
+
+.ClearBoth {
+  clear: both;
 }

@@ -1,9 +1,6 @@
 /*
-2c2d2b - almost black
-e2e9f9 - light blue
-eaeaea - light grey
-8aae0b - green
-5480cc - darkish blue
+222  - dark grey
+008fca - light blue
 */
 
 body{
@@ -17,8 +14,8 @@ a img {border: none;}
 a:link, a:visited {color: #555}
 a:hover {color: #000;}
   
-#header {
-  background: #2c2d2b;
+#header_wrapper {
+  background: #008fca;
   color: #fffbff;
 }
 
@@ -29,34 +26,37 @@ a:hover {color: #000;}
   color: #fff;
 }
 
+#header ul.Menu li{
+  border-radius: 7px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#header ul.Menu li a{
+  color: white;
+}
+body.Site #header ul.Menu li.Site, body.Site #header ul.Menu li.Site a {background-color: white; color: #008fca;}
+body.Bacn #header ul.Menu li.Bacn, body.Bacn #header ul.Menu li.Bacn a {background-color: white; color: #008fca;}
+
 
 #content {
   background-color: #fff;
 }
 
-.Bacn #content {
-  background-color: #e2e9f9;
+#footer_wrapper {
+  border-top: 1px solid #555;
+  color: #fff;
+  background-color: #222;
 }
-.Bacn #content ul.BucketList li {
-  background: #ccc; /* for non-css3 browsers */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eee', endColorstr='#ccc'); /* for IE */
-  background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ccc)); /* for webkit browsers */
-  background: -moz-linear-gradient(top,  #eee,  #ccc); /* for firefox 3.6+ */ 
-}
+
+
 .Bacn #content ul.BucketList li.Selected {
   background: none;
-  background-color: #fff;
-}
-.Bacn #content div.DisplayPort {
   background-color: #fff;
 }
 
 #dashboard {
   background-color: #fff;
-}
-
-#footer {
-  border-top: 2px solid #aaa;
 }
 
 /* Generic Classes */
@@ -67,4 +67,8 @@ a:hover {color: #000;}
 
 .Item h1 {
   display: block;
+}
+
+ul{
+  list-style: none;
 }
