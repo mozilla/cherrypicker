@@ -1,3 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
 html, body {
   height: 100%;
   width: 100%;
@@ -5,40 +14,35 @@ html, body {
 
 #main_wrapper {
   min-height: 70%;
-  overflow-x: visible;
 }
 
 #header_wrapper {
   height: 80px;
+  text-align: center;
 }
 
 #header {
   width: 960px;
   margin: 0 auto;
   position: relative;
+  bottom: 0;
 }
 
 #header h1 {
-  padding: 0.5em;
-  position: absolute;
+  line-height: 80px;
 }
 
 #header ul.Menu{
-  position: absolute;
-  right: 0px;
-  top: 55px;
-  float: right;
-  clear: right;
+  line-height: 120px;
 }
 
 #header ul.Menu li {
   display: inline;
-  margin: 1em;
-  padding: 0.8em;
+  margin: 2.5px;
+  padding: 10px;
 }
 
 #content {
-  padding: 2em;
   width: 960px;
   margin: 0 auto;
 }
@@ -47,34 +51,31 @@ html, body {
   margin-top: 1em;
 }
 
+#signin {
+  margin: 10px auto;
+  padding: 30px 20px;
+  position: relative;
+  display: inline-block;
+}
+
 
 #footer_wrapper {
   height: 240px;
   width: 100%;
-  clear: both;
-}
-#footer {
-  margin: 1em auto;
-  width: 960px;
+  text-align: center;
 }
 
-#footer #footer_links {
-  position: absolute;
-  width: 400px
+#footer {
+  margin: 20px auto;
+  width: 960px;
 }
 
 #footer #mission{
   width: 400px;
-  float: right;
-}
-
-.Bacn #content {
-  padding: 0;
 }
 
 .Bacn ul.BucketList {
   width: 20%;
-  float: left;
 }
 
 .Bacn ul.BucketList li {
@@ -84,11 +85,10 @@ html, body {
 }
 
 .Bacn div.DisplayPort {
-  float: right;
-  overflow: scroll;
-  overflow-x: hidden;
   height: 100%;
   width: 80%;
+  top: -10px;
+  position: relative;
 }
 
 
@@ -114,4 +114,98 @@ ul.ItemList {
 
 .ClearBoth {
   clear: both;
+}
+
+
+/* hbox and vbox */
+
+.hbox {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+
+  width: 100%;
+}
+
+.hbox > * {
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  box-flex: 0;
+  display: block;
+}
+
+.vbox {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+}
+
+.vbox > * {
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  box-flex: 0;
+}
+
+.spacer {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+}
+
+.reverse {
+  -webkit-box-direction: reverse;
+  -moz-box-direction: reverse;
+  box-direction: reverse;
+}
+
+.boxFlex0 {
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  box-flex: 0;
+}
+
+.boxFlex1, .boxFlex {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+}
+
+.boxFlex2 {
+  -webkit-box-flex: 2;
+  -moz-box-flex: 2;
+  box-flex: 2;
+}
+
+.start {
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  box-pack: start;
+}
+
+.end {
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+}
+
+.center {
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
 }
