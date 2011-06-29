@@ -1,7 +1,7 @@
-BacnlabCom::Application.routes.draw do
+MozillaSift::Application.routes.draw do
 
-  get "site/index"
-  get "site/about"
+  match 'dashboard' => 'dashboard#index'
+  match 'about' => 'site#about'
   
   resources :session
   resources :bacn

@@ -10,23 +10,34 @@ class BacnController < ApplicationController
   
   # curl \
   # --user foo:bar \
-  # -d @fixtures/twitter_follow.email \
+  # -d @fixtures/1.eml \
   # -H "Content-Type:text/plain" \
   # -H "Accept:application/json" \
   # "http://localhost:3000/bacn"
   
   def create
     @bacn = Bacn.parse(request.body.read)
+    @bacon.save!
     respond_to do |format|
-      format.html
       format.json { render :text => @bacn.to_json }
     end
   end
   
   def index
-    
-  end
-  
-  def show
-  end
+    @bacns = Bacn.find_all_by_user_id(session[:user_id])
+    respond_to do |format|
+      format.json do
+        render :text => @bacns.to_json({
+          :include => {
+            :headers => {:only => [:name, :value]}, 
+            :mime_parts => {:only => [:content_type, :body]},
+          },
+          :only => [
+            :source,
+            :id
+          ]
+        })
+      end
+    end
+  end  
 end
