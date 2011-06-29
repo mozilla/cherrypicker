@@ -17,7 +17,7 @@ require 'highline/import'
 
 password = ask("Please enter password for account #{config['username']}") {|q| q.echo = '*'}
 puts
-puts "Looking on server #{config['server']} for unread emails in the #{config['folder']} folder."
+puts "Looking on server #{config['server']} for unread emails in the \"#{config['folder']}\" folder."
 
 imap = Net::IMAP.new(config['server'], config['port'], config['ssl'])
 imap.login(config['username'], password)
