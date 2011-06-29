@@ -25,13 +25,17 @@ var Dashboard = {
       
       var source = value['bacn']['source'];
       console.log('.' + source.replace(/\./g, '_') + '_Template');
+      var template = $('#dashboard_templates .' + source.replace(/\./g, '_') + '_Template')
+        .clone()
+        .removeClass(source.replace(/\./g, '_') + '_Template');
+
 
       var e = Dashboard.renderers[source].render({
           'id': value['bacn']['id'],
           'parts': parts,
           'headers': headers
         },
-        $('.' + source.replace(/\./g, '_') + '_Template').clone()
+        template
       );
       $('#bacn_list').append(e);
             

@@ -17,7 +17,7 @@
       </li>
     </ul>
   </div>
-  <div class="Templates" style="display:none;">
+  <div id="dashboard_templates" style="display:none;">
     <ul>
       <% @renderers.each do |renderer| %>
         <li class="<%= renderer[:source].gsub(/\./, '_')%>_Template">
