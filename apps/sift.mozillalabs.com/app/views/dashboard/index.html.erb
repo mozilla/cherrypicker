@@ -3,27 +3,28 @@
   <%= javascript_include_tag 'dashboard' %>
   <%= javascript_include_tag @js_files %>
 <% end %>
-<ul class="BucketList Menu">
-  <li><a href="#">All</a></li>
-  <li class="Selected"><a href="#">Facebook</a></li>
-  <li><a href="#">Twitter</a></li>
-  <li><a href="#">Unrecognized</a></li>
-</ul>
-<div class="DisplayPort">
-  <ul id="bacn_list" class="Container ItemList">
-    <li style="display:none">
+<div class="hbox">
+  <ul class="BucketList Menu">
+    <li><a href="#">All</a></li>
+    <li class="Selected"><a href="#">Facebook</a></li>
+    <li><a href="#">Twitter</a></li>
+    <li><a href="#">Unrecognized</a></li>
+  </ul>
+  <div class="DisplayPort boxFlex1">
+    <ul id="bacn_list" class="Container ItemList">
+      <li style="display:none">
       
-    </li>
-  </ul>
-</div>
-<div class="Templates" style="display:none;">
-  <ul>
-    <% @renderers.each do |renderer| %>
-      <li class="<%= renderer[:source].gsub(/\./, '_')%>_Template">
-        <div>
-          <%= raw renderer[:template]%>
-        </div>
       </li>
-    <% end %>
-  </ul>
-</div>
+    </ul>
+  </div>
+  <div class="Templates" style="display:none;">
+    <ul>
+      <% @renderers.each do |renderer| %>
+        <li class="<%= renderer[:source].gsub(/\./, '_')%>_Template">
+          <div>
+            <%= raw renderer[:template]%>
+          </div>
+        </li>
+      <% end %>
+    </ul>
+  </div>
