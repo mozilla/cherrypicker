@@ -35,7 +35,7 @@ a:hover {color: #000;}
   color: white;
 }
 body.Site #header ul.Menu li.Site, body.Site #header ul.Menu li.Site a {background-color: white; color: #008fca;}
-body.Bacn #header ul.Menu li.Bacn, body.Bacn #header ul.Menu li.Bacn a {background-color: white; color: #008fca;}
+body.Dashboard #header ul.Menu li.Dashboard, body.Dashboard #header ul.Menu li.Dashboard a {background-color: white; color: #008fca;}
 
 
 #content {

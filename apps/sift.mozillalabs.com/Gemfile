@@ -5,3 +5,7 @@ gem 'rails', '3.0.3'
 gem 'httparty'
 gem 'mysql2', '< 0.3'
 
+gem 'mail'
+
+gem 'sanitize'
+gem "jquery-rails"

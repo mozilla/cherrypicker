@@ -68,22 +68,22 @@ html, body {
   float: right;
 }
 
-.Bacn #content {
+.Dashboard #content {
   padding: 0;
 }
 
-.Bacn ul.BucketList {
+.Dashboard ul.BucketList {
   width: 20%;
   float: left;
 }
 
-.Bacn ul.BucketList li {
+.Dashboard ul.BucketList li {
   margin: 0;
   padding: 1em;
   height: 1em;
 }
 
-.Bacn div.DisplayPort {
+.Dashboard div.DisplayPort {
   float: right;
   overflow: scroll;
   overflow-x: hidden;

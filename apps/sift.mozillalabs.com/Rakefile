@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-BacnlabCom::Application.load_tasks
+MozillaSift::Application.load_tasks

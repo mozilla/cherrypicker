@@ -10,7 +10,44 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110624195000) do
+ActiveRecord::Schema.define(:version => 20110629032408) do
+
+  create_table "bacns", :force => true do |t|
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "source"
+  end
+
+  add_index "bacns", ["source"], :name => "index_bacns_on_source"
+  add_index "bacns", ["user_id"], :name => "index_bacns_on_user_id"
+
+  create_table "headers", :force => true do |t|
+    t.integer "bacn_id"
+    t.string  "name"
+    t.string  "value"
+  end
+
+  add_index "headers", ["bacn_id"], :name => "index_headers_on_bacn_id"
+
+  create_table "mime_parts", :force => true do |t|
+    t.string  "content_type"
+    t.text    "body",         :limit => 2147483647
+    t.integer "bacn_id"
+  end
+
+  add_index "mime_parts", ["bacn_id"], :name => "index_mime_parts_on_bacn_id"
+  add_index "mime_parts", ["content_type"], :name => "index_mime_parts_on_content_type"
+
+  create_table "sessions", :force => true do |t|
+    t.string   "session_id", :null => false
+    t.text     "data"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
+  add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
 
   create_table "users", :force => true do |t|
     t.string   "email"
