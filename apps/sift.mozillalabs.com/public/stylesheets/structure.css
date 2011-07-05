@@ -90,6 +90,9 @@ html, body {
   position: relative;
 }
 
+#bacn_list li {
+  margin: 10px 0;
+}
 
 
 

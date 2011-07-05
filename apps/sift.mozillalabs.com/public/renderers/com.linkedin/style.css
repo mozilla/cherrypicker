@@ -1,0 +1,67 @@
+.notification {
+  margin: 10px 0;
+  color: #333;
+}
+
+button {
+  padding: 2.5px 10px;
+  cursor: pointer;
+}
+button.follow,
+button.accept {
+  background: #EEE;
+  background: -moz-linear-gradient(top, #EEE 0%, #CCC 100%);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEE), to(#CCC));
+  border: 1px solid #CCC;
+  border-bottom: 1px solid #BBB;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #333;
+  font-weight: bold;
+  text-shadow: 0 1px 0 #EEE;
+}
+button.ignore {
+  background: #ddd;
+  border: 1px solid #aaa;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  opacity: 0.2;
+}
+button.ignore:hover {
+  background: #C63929;
+  background: -moz-linear-gradient(top, #EE432E 0%, #C63929 50%, #B51700 50%, #891100 100%);
+  background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #EE432E), color-stop(0.5, #C63929), color-stop(0.5, #B51700), color-stop(1, #891100));
+  border: 1px solid #951100;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333;
+  -webkit-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333;
+  box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333;
+  color: white;
+  text-align: center;
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, .8);
+  opacity: 1.0;
+}
+.body {
+  margin-left: 5px;
+}
+.name {
+  color: #3B5998;
+  font-weight: bold;
+}
+.handle {
+  color: #999;
+}
+.action {
+  color: #666;
+}
+.message {
+  color: #444;
+  font-style: italic;
+}
+.image {
+  padding-right: 5px;
+}
