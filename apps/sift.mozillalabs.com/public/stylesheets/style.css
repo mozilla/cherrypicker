@@ -51,7 +51,7 @@ a:hover {color: #000;}
   outline: none;
 }
 
-#signin {
+.sessionless {
   border-bottom: 1px solid #bbb;
   background-image: -webkit-gradient(linear, center bottom, center top, from(#fff), to(#efefef), color-stop(10%, #fefefe), color-stop(90%, #f2f2f2));
   background-image: -moz-linear-gradient(top, #fff 10%, #fefefe 10%, #f2f2f2 90%, #efefef 100%);

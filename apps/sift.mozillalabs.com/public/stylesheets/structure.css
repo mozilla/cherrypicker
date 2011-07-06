@@ -38,7 +38,7 @@ html, body {
   position: relative;
 }
 
-#signin {
+.sessionless {
   padding: 30px 20px;
 }
 
