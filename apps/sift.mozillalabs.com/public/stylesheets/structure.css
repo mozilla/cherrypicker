@@ -34,13 +34,12 @@ html, body {
 #content {
   width: 300px;
   margin: 0 auto;
+  top: -10px;
+  position: relative;
 }
 
 #signin {
-  margin: 10px auto;
   padding: 30px 20px;
-  position: relative;
-  display: inline-block;
 }
 
 #footer_wrapper {
@@ -58,11 +57,6 @@ html, body {
 
 #mission {
   margin: 20px 0;
-}
-
-.Dashboard div.DisplayPort {
-  top: -10px;
-  position: relative;
 }
 
 #bacn_list li {
