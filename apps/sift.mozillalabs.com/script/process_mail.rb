@@ -5,6 +5,7 @@ require 'mail'
 
 require 'pp'
 
-Bacn.transaction do 
-  Bacn.parse(ARGF.read).save!
+Bacn.transaction do
+  bacon = Bacn.parse(ARGF.read)
+  bacon.save! if bacon
 end
