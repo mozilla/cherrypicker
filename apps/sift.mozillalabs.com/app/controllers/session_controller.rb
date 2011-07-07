@@ -20,7 +20,7 @@ class SessionController < ApplicationController
         if session[:login_redirect] && !(session[:login_redirect] =~ /\/session/)
           redirect_to session[:login_redirect]
         else
-          redirect_to '/bacn'
+          redirect_to :dashboard
         end
       else
         render :action => 'error', :status => 403
