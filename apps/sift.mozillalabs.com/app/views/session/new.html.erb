@@ -1,9 +1,9 @@
-<div id="signin">
+<div class="sessionless" id="signin">
 
   <p>
     <% form_for 'session', :url => '/session' do |f|%>
       <%= f.hidden_field :assertion, :class => "SignIn" %>
-      <a href="#" class="SignIn"><img src="https://browserid.org/i/sign_in_blue.png" alt="Sign In" /></a> <span class="extra">with <img src="/images/browserid_logo_sm.png" alt="Browser ID" /></span>
+      <a href="#" class="SignIn"><img src="https://browserid.org/i/sign_in_blue.png" alt="Sign In" /> <span class="extra">with <img src="/images/browserid_logo_sm.png" alt="Browser ID" /></span></a>
     <% end %>
   </p>
 
@@ -11,4 +11,5 @@
     <a href="https://browserid.org/users.html">BrowserID</a> provides a <em>simple</em> and <em>sophisticated</em> login process that you will love.
   </p>
 
+  <p style="margin-top:40px;text-align:center;">Learn more about <a href="/">Mozilla Sift</a></p>
 </div>

@@ -29,16 +29,17 @@ var Dashboard = {
         .clone()
         .removeClass(source.replace(/\./g, '_') + '_Template');
 
+      if (Dashboard.renderers[source]) {
+        var e = Dashboard.renderers[source].render({
+            'id': value['bacn']['id'],
+            'parts': parts,
+            'headers': headers
+          },
+          template
+        );
+        $('#bacn_list').append(e);
+      }
 
-      var e = Dashboard.renderers[source].render({
-          'id': value['bacn']['id'],
-          'parts': parts,
-          'headers': headers
-        },
-        template
-      );
-      $('#bacn_list').append(e);
-            
     });
   }
 }

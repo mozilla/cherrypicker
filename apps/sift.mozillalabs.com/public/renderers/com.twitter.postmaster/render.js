@@ -11,7 +11,6 @@ Dashboard.renderers['com.twitter.postmaster'] = {
 
     if (bacn.headers['X-Twitteremailtype'] === "is_following") {
       element.find('.action').text("is following you");
-      element.find('.follow').show();
     } else if (/.*mentioned.*/.test(subject)) {
       element.find('.action').text("mentioned you");
       var regex = new RegExp('@'+senderhandle+':(.*)');

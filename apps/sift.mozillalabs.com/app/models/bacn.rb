@@ -30,6 +30,7 @@ class Bacn < ActiveRecord::Base
       end
       return bacn
     else
+      print "to: " + mail['to'].to_s + " could not be found in the database"
       return nil
     end
   end

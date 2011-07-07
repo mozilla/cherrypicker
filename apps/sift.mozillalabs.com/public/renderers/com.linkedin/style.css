@@ -1,27 +1,18 @@
 .notification {
-  margin: 10px 0;
+  margin: 15px 0;
+  padding: 15px 0;
   color: #333;
+  border-bottom: 1px solid #ddd;
 }
-
+.notification:hover button.ignore {
+  visibility: visible;
+}
 button {
-  padding: 2.5px 10px;
+  padding: 2.5px 5px;
   cursor: pointer;
 }
-button.follow,
-button.accept {
-  background: #EEE;
-  background: -moz-linear-gradient(top, #EEE 0%, #CCC 100%);
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEE), to(#CCC));
-  border: 1px solid #CCC;
-  border-bottom: 1px solid #BBB;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  color: #333;
-  font-weight: bold;
-  text-shadow: 0 1px 0 #EEE;
-}
 button.ignore {
+  visibility: hidden;
   background: #ddd;
   border: 1px solid #aaa;
   -moz-border-radius: 5px;
@@ -45,8 +36,8 @@ button.ignore:hover {
   text-shadow: 0px -1px 1px rgba(0, 0, 0, .8);
   opacity: 1.0;
 }
-.body {
-  margin-left: 5px;
+.sender {
+  margin-right: 5px;
 }
 .name {
   color: #3B5998;
@@ -59,6 +50,7 @@ button.ignore:hover {
   color: #666;
 }
 .message {
+  margin: 10px 0;
   color: #444;
   font-style: italic;
 }

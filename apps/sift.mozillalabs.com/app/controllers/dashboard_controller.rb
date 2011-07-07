@@ -16,8 +16,9 @@ class DashboardController < ApplicationController
       template_path = "#{renderer_path}/template.html"
       
       template = nil
-      template = Sanitize.clean(File.read(template_path), Sanitize::Config::RELAXED) if File.exist?(template_path)
-      
+      template = Sanitize.clean(File.read(template_path), :elements => ['a', 'span', 'div', 'h1', 'p', 'img', 'button'],
+                                                          :attributes => {:all => ['id', 'class', 'style'], 'a' => ['href'], 'img' => ['src'] },
+                                                          :protocols => {'a' => {'href' => ['http', 'https', 'mailto']} } )
       
       {:template => template, :source => source}
     end

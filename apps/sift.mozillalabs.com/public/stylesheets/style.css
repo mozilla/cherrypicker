@@ -8,7 +8,7 @@ body{
   color: #2c2d2b;
 }
 
-a { text-decoration: none; }
+a { }
 a img {border: none;}
 a:link, a:visited {color: #555}
 a:hover {color: #000;}
@@ -22,33 +22,43 @@ a:hover {color: #000;}
 
 #header h1 {
   font-variant: small-caps;
-  font-size: 300%;
+  font-size: 200%;
 }
+
 #header h1 a{
   color: #222;
+  text-decoration: none;
 }
-
-#header ul.Menu li{
-  border-radius: 7px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border: 1px solid #ccc;
-  border-bottom: none;
-}
-
-body.Site #header ul.Menu li.Site, body.Site #header ul.Menu li.Site a {background-color: white; color: #008fca;}
-body.Dashboard #header ul.Menu li.Dashboard, body.Dashboard #header ul.Menu li.Dashboard a {background-color: white; color: #008fca;}
-
 
 #content {
   background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid transparent;
+  -moz-box-shadow: 0px -1px 5px rgba(60,60,60,0.15);
+  -webkit-box-shadow: 0px -1px 5px rgba(60,60,60,0.15);
 }
 
-#signin {
-  border: 1px solid #bbb;
-  -moz-border-radius: 4px;
-  background-image: -webkit-gradient(linear, center bottom, center top, from(#fff), to(#eee), color-stop(1%, #f5f5f5));
+#email {
+  text-align:center;
+  border:1px solid #ccc;
+  background-color:#eee;
+  border-radius:5px;
+}
+
+#email:focus {
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.sessionless {
+  border-bottom: 1px solid #bbb;
+  background-image: -webkit-gradient(linear, center bottom, center top, from(#fff), to(#efefef), color-stop(10%, #fefefe), color-stop(90%, #f2f2f2));
   background-image: -moz-linear-gradient(top, #fff 10%, #fefefe 10%, #f2f2f2 90%, #efefef 100%);
+}
+
+.SignIn {
+  text-decoration: none;
 }
 
 .extra {
@@ -62,25 +72,15 @@ body.Dashboard #header ul.Menu li.Dashboard, body.Dashboard #header ul.Menu li.D
   background-color: #222;
 }
 
-#footer a, a:visited, a:hover {
+#footer a,
+#footer a:visited,
+#footer a:hover {
   color: #ccc;
 }
 
-.DisplayPort {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  -moz-box-shadow: 1px 1px 1px #aaa;
-  -webkit-box-shadow: 0px 0px 5px rgba(30,30,30,0.25);
-}
-
-.Bacn #content ul.BucketList li.Selected {
-  background: none;
-  background-color: #fff;
-}
-
-#dashboard {
-  background-color: #fff;
+#footer .Copyright {
+  text-align: center;
+  margin: 5px 0;
 }
 
 /* Generic Classes */

@@ -16,78 +16,47 @@ html, body {
   min-height: 70%;
 }
 
-#header_wrapper {
-  height: 80px;
-  text-align: center;
-}
-
 #header {
-  width: 960px;
+  width: 300px;
   margin: 0 auto;
-  position: relative;
-  bottom: 0;
 }
 
 #header h1 {
+  text-align: center;
   line-height: 80px;
 }
 
-#header ul.Menu{
-  line-height: 120px;
-}
-
-#header ul.Menu li {
-  display: inline;
-  margin: 2.5px;
-  padding: 10px;
+#email {
+  width:90%;
+  padding:5px;
 }
 
 #content {
-  width: 960px;
+  width: 300px;
   margin: 0 auto;
-}
-
-#content h1, #content h2, #content h3, #content h4, #content h5 {
-  margin-top: 1em;
-}
-
-#signin {
-  margin: 10px auto;
-  padding: 30px 20px;
+  top: -10px;
   position: relative;
-  display: inline-block;
 }
 
+.sessionless {
+  padding: 30px 20px;
+}
 
 #footer_wrapper {
-  height: 240px;
+  position: relative;
+  top: -10px;
+  padding: 10px;
   width: 100%;
   text-align: center;
 }
 
 #footer {
   margin: 20px auto;
-  width: 960px;
+  width: 300px;
 }
 
-#footer #mission{
-  width: 400px;
-}
-.Dashboard ul.BucketList {
-  width: 20%;
-}
-
-.Dashboard ul.BucketList li {
-  margin: 0;
-  padding: 1em;
-  height: 1em;
-}
-
-.Dashboard div.DisplayPort {
-  height: 100%;
-  width: 80%;
-  top: -10px;
-  position: relative;
+#mission {
+  margin: 20px 0;
 }
 
 #bacn_list li {

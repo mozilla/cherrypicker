@@ -3,17 +3,11 @@
   <%= javascript_include_tag 'dashboard' %>
   <%= javascript_include_tag @js_files %>
 <% end %>
-<div class="hbox">
-  <ul class="BucketList Menu">
-    <li><a href="#">All</a></li>
-    <li class="Selected"><a href="#">Facebook</a></li>
-    <li><a href="#">Twitter</a></li>
-    <li><a href="#">Unrecognized</a></li>
-  </ul>
-  <div class="DisplayPort boxFlex1">
+<div>
+  <div class="DisplayPort">
     <ul id="bacn_list" class="Container ItemList">
-      <li style="display:none">
-      
+      <li style="text-align:center;">
+        <input onclick="this.select();" type="text" id="email" value="<%= session[:user][:account]%>@sift.mozillalabs.com"/>
       </li>
     </ul>
   </div>
