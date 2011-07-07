@@ -2,4 +2,4 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  common_nouns: [age, air, animal, answer, apple, area, arm, art, atom, baby, back, ball, band, bank, bar, base, bat, bear, beauty, bell, bird, bit, block, blood, blow, board, boat, body, bone, book, bottom, box, boy, branch, bread, break, brother, call, camp, capital, captain, car]
