@@ -37,4 +37,13 @@ class User < ActiveRecord::Base
     end
     self[:account]
   end
+  
+  def session_hash
+    {
+      :id => self.id,
+      :account => self.account,
+      :email => self.email
+    }
+  end
+  
 end

@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
   def authenticate
     
     if request.authorization.blank?
-      if !session[:user_id]
+      if !session[:user]
         flash[:notice] = "Please sign in or create an account to continue."
         session[:login_redirect] = request.url
         redirect_to :controller => :session, :action => :new

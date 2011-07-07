@@ -24,7 +24,7 @@ class BacnController < ApplicationController
   end
   
   def index
-    @bacns = Bacn.find_all_by_user_id(session[:user_id])
+    @bacns = Bacn.find_all_by_user_id(session[:user][:id])
     respond_to do |format|
       format.json do
         render :text => @bacns.to_json({
