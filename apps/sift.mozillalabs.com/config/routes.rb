@@ -5,6 +5,7 @@ MozillaSift::Application.routes.draw do
   
   resources :session
   resources :bacn
+  resources :permissions
   	
   root :to => "site#index"
 
