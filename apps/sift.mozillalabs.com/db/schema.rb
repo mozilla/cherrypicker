@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110707184242) do
+ActiveRecord::Schema.define(:version => 20110708184423) do
 
   create_table "bacns", :force => true do |t|
     t.integer  "user_id"
@@ -38,6 +38,16 @@ ActiveRecord::Schema.define(:version => 20110707184242) do
 
   add_index "mime_parts", ["bacn_id"], :name => "index_mime_parts_on_bacn_id"
   add_index "mime_parts", ["content_type"], :name => "index_mime_parts_on_content_type"
+
+  create_table "permissions", :force => true do |t|
+    t.string   "source"
+    t.integer  "user_id"
+    t.string   "value",      :default => "display"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "permissions", ["source", "user_id"], :name => "index_permissions_on_source_and_user_id", :unique => true
 
   create_table "sessions", :force => true do |t|
     t.string   "session_id", :null => false

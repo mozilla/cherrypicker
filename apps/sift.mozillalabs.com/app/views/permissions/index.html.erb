@@ -1,0 +1,52 @@
+<% content_for :head do %>
+<style>
+/*TODO: Remove this: */
+  td {
+    padding: 0.3em;
+  }
+  .PermissionGranted {
+    background-color: #98FB98;
+  }
+  .PermissionDenied {
+    background-color: red;
+  }
+</style>
+<% end %>
+
+
+<h1>Permissions</h1>
+<form>
+  <table>
+    <tbody>
+      <% @permissions_by_source.each_pair do |source, permission| %>
+        <% content_for :script do %>
+          $(function(){
+            $('#<%= "permission_#{source.gsub(/\./, '_')}"%>').change(function(){
+              console.log('runnin!');
+              console.log($('#<%= "permission_#{source.gsub(/\./, '_')}"%>').val());
+              $.ajax({
+                type: 'POST',
+                url: '/permissions.json', 
+                data: {
+                  source: '<%= source%>',
+                  value: $('#<%= "permission_#{source.gsub(/\./, '_')}"%>').val()
+                },
+                success: function(){console.log('success!');},
+                dataType: 'json'
+              });
+            });
+            
+          });
+        <% end %>
+        <tr>
+          <th><%= source %></th>
+          <td>
+            <select id="<%= "permission_#{source.gsub(/\./, '_')}"%>">
+              <%= options_for_select(Permission::VALUES, permission.value)%>
+            </select>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</form>
