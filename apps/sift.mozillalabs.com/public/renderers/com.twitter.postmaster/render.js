@@ -10,7 +10,7 @@ Dashboard.renderers['com.twitter.postmaster'] = {
     element.find('.handle').text(senderhandle);
 
     if (bacn.headers['X-Twitteremailtype'] === "is_following") {
-      element.find('.action').text("is following you");
+      element.find('.action').text("started following you");
     } else if (/.*mentioned.*/.test(subject)) {
       element.find('.action').text("mentioned you");
       var regex = new RegExp('@'+senderhandle+':(.*)');
