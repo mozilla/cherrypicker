@@ -27,7 +27,7 @@ class User < ActiveRecord::Base
       
       puts common_nouns
       base = common_nouns.size
-      num = self.id
+      num = rand(base)
       words = []
       while num > 0
         words << common_nouns[num % base]
