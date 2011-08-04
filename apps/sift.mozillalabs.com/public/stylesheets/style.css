@@ -3,6 +3,18 @@
 008fca - light blue
 */
 
+/* first for IE 6/7/8 */
+@font-face {
+  font-family: MetaScWebPro-Black;
+  src: url(fonts/MetaScWebPro-Black.eotlite);
+}
+
+/* then for Mozilla browsers -> Firefox */
+@font-face {
+  font-family: MetaScWebPro-Black;
+  src: url(fonts/MetaScWebPro-Black.woff) format('woff');
+}
+
 body{
   font: 10pt/14pt "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222;
@@ -22,9 +34,9 @@ a:hover {color: #000;}
 }
 
 #header h1 {
-  text-transform: capitalize;
-  font-weight: bold;
-  font-size: 18px;
+  font-family: MetaScWebPro-Black, sans-serif;
+  text-transform: lowercase;
+  font-size: 24px;
 }
 
 #header h1 a {
