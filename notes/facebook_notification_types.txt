@@ -1,0 +1,88 @@
+Facebook
+  Sends you a message		
+  Adds you as a friend		
+  Confirms a friend request		
+  Posts on your Wall		
+  Pokes you		
+  Has a birthday coming up (weekly email)		
+  Asks to list you as family		
+  Confirms a family request		
+  suggests a friend you might know		
+  Adds a friend you suggested		
+  Joins Facebook after your invitation		
+  Tags you on their profile		
+  Tags you in a post		
+  mentions you in a comment		
+  Comments on a post you were tagged in		
+  Suggests a profile picture for you		
+  Likes your post
+Photos
+  Tags you in a photo		
+  Tags one of your photos		
+  Comments on your photos		
+  Comments on a photo of you		
+  Comments after you on a photo		
+  When you upload a photo via email		
+  comments on my photo albums		
+  Comments after you on a photo album
+Groups
+  Changes the name of one of your groups		
+  Makes you group admin		
+  Asks to join a group you admin		
+  Adds you to a group		
+  Approves your request to join a group		
+  Changes the privacy setting of one of your groups
+Pages
+  Makes you a Page admin		
+  Suggests a Page to you		
+  replies to your discussion board post		
+  Weekly Page updates for admins
+Events
+  Invites you to an event		
+  changes the date or time of an event		
+  cancels an event		
+  Makes you an event admin		
+  Posts on the wall of an event you admin		
+  Changes the name of an event you're invited to		
+  Changes the photo of an event
+Questions
+  Answers your question		
+  Suggests a question for you to answer		
+  Comments on your answer		
+  Comments after you on an answer		
+  Answers a question you asked them to answer
+Notes
+  Tags you in a note		
+  Comments on your notes		
+  comments after you in a note
+Links
+  Comments on your links		
+  Comments after you on a link		
+  Shares something you posted
+Video
+  Tags you in a video		
+  Tags one of your videos		
+  comments on your videos		
+  comments on a video of you		
+  comments after you in a video
+Help Centre
+  Replies to your Help Centre question		
+  Marks your answer as Best Answer
+Wall Comments
+  Comments on a story on your Wall		
+  Comments after you on a Wall story
+Places
+  Tags you at a place		
+  Comments on one of your check-ins
+Deals
+  Suggestions to subscribe to deals on Facebook	
+Other updates from Facebook
+  Updates about your friends on Facebook		
+  updates about Facebook product news		
+  invitations to participate in research about Facebook		
+  Send weekly updates for your domains
+Credits
+  Credits you've purchased		
+  Pending order has been completed
+Other Applications
+  (each app you have installed)

@@ -1,0 +1,10 @@
+Messages
+  I'm sent a direct message
+  I'm sent a reply or mentioned
+Activity
+  I'm followed by someone new
+  My Tweets are marked as favorites
+  My Tweets are retweeted
+Updates
+  Occasional updates about new Twitter products, features, and tips
+  Product or service updates related to my Twitter account
